@@ -16,16 +16,16 @@
 
 /** MySQL settings - You can get this info from your web host **/
 /** The name of the database for WordPress */
-define('DB_NAME', $_SERVER['WORDPRESS_DB_NAME']);
+define('DB_NAME', 'med_it_database');
 
 /** MySQL database username */
-define('DB_USER', $_SERVER['WORDPRESS_DB_USER']);
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', $_SERVER['WORDPRESS_DB_PASSWORD']);
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', $_SERVER['WORDPRESS_DB_HOST'] . ':' . '3306');
+define('DB_HOST', 'localhost' . ':' . '3306');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -36,7 +36,7 @@ define('DB_COLLATE', '');
 /** Disable WordPress file editor */
 define( 'DISALLOW_FILE_EDIT', true );
 
-define( 'COOKIEHASH', md5($_SERVER['WORDPRESS_DB_PASSWORD'] . 'secure cookies' .$_SERVER['WORDPRESS_DB_PASSWORD'] ) );	// Cookies hardening
+define( 'COOKIEHASH', md5('root' . 'secure cookies' .'root' ) );	// Cookies hardening
 
 define( 'WP_MEMORY_LIMIT', '256M' );
 
