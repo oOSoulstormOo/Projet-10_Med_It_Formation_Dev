@@ -154,7 +154,7 @@ class Module extends BaseModule {
 
 		$this->requests = json_decode( stripslashes( $_REQUEST['actions'] ), true );
 
-		foreach ( $this->requests as $id => $action_data ) {
+	 	foreach ( $this->requests as $id => $action_data ) {
 			$this->current_action_id = $id;
 
 			if ( ! isset( $this->ajax_actions[ $action_data['action'] ] ) ) {
