@@ -10,6 +10,10 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
+#menu-main-menu {
+    display: flex;
+    align-items: center;
+}
 
 .contact-btn{
     display:inline-block;
