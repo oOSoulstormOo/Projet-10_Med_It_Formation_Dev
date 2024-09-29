@@ -15,12 +15,19 @@ Version: 1.0
     align-items: center;
 }
 
-.contact-btn{
-    display:inline-block;
+.contact-btn {
+    /*display:inline-block; */
     background-color:white;
     padding:6px 16px;
     border-radius:6px;
 }
+
+#menu-footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
 .popup-overlay{
     position:fixed;
     width:100%;
